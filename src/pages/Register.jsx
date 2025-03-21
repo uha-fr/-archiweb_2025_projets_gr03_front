@@ -126,6 +126,7 @@ function Register() {
     setUsername(e.target.value);
   };
 
+  
   const changePhoneNumber = (e) => {
     const inputNumber = e.target.value.replace(/\D/g, '');
     setPhoneNumber(inputNumber);
