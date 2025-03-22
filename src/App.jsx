@@ -4,6 +4,7 @@ import Navbar from "./pages/Navbar";
 import Footer from "./pages/Footer";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import ProductList from "./pages/ProductList";
 
 import './App.css';
 
@@ -12,11 +13,12 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navbar />
-        
+
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/Register" element={<Register />}></Route>
-          <Route path="/Login" element={<Login />}></Route>
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Register" element={<Register />} />
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Products" element={<ProductList />} />
 
         </Routes>
 
