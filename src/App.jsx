@@ -5,6 +5,8 @@ import Footer from "./pages/Footer";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import ProductList from "./pages/ProductList";
+import ProductDetail from "./pages/ProductDetail";
+
 
 import './App.css';
 
@@ -19,6 +21,8 @@ function App() {
           <Route path="/Register" element={<Register />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Products" element={<ProductList />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+
 
         </Routes>
 
