@@ -11,8 +11,8 @@ const ProductList = () => {
         const fetchProducts = async () => {
             try {
                 const response = await axios.get('https://127.0.0.1:8000/api/products');
-                console.log(response.data['hydra:member']); // Vérifiez la structure des données
-                setProducts(response.data['hydra:member']); // Assurez-vous d'accéder à la bonne propriété
+                //console.log(response.data['hydra:member']); 
+                setProducts(response.data['hydra:member']);
             } catch (err) {
                 setError(err);
             }
